@@ -50,6 +50,10 @@
 			var names = data.names;
 			var files = data.files;
 
+			for(var i = 0; i < names.length; i++){
+				$('#list').append('<div class="3u"> <a href="/flags/' + files[i] + '"> <p>' + names[i] + '</p></a> </div>');
+			}
+
 			var indexOne = Math.floor(Math.random() * files.length);
 			var linkOne = '/flags/' + files[indexOne];
 			$('#exampleOneImg').attr('src', linkOne);
