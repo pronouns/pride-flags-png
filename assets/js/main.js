@@ -43,6 +43,43 @@
 		// Scrolly.
 			$('.scrolly').scrolly();
 
+		$.getJSON('info.json', function(data) {
+			console.log(data);
+			$('#amount').html(data.count);
+
+			var names = data.names;
+			var files = data.files;
+
+			var indexOne = Math.floor(Math.random() * files.length);
+			var linkOne = '/flags/' + files[indexOne];
+			$('#exampleOneImg').attr('src', linkOne);
+			$('#exampleOneName').html(names[indexOne]);
+			$('#exampleOneCode').html(linkOne);
+			$('#exampleOneLink').attr('href', linkOne);
+
+			files.splice(indexOne, 1);
+			names.splice(indexOne, 1);
+
+			var indexTwo = Math.floor(Math.random() * files.length);
+			var linkTwo = '/flags/' + files[indexTwo];
+			$('#exampleTwoImg').attr('src', linkTwo);
+			$('#exampleTwoName').html(names[indexTwo]);
+			$('#exampleTwoCode').html(linkTwo);
+			$('#exampleTwoLink').attr('href', linkTwo);
+
+			files.splice(indexTwo, 1);
+			names.splice(indexTwo, 1);
+
+			var indexThree = Math.floor(Math.random() * files.length);
+			var linkThree = '/flags/' + files[indexThree];
+			$('#exampleThreeImg').attr('src', linkThree);
+			$('#exampleThreeName').html(names[indexThree]);
+			$('#exampleThreeCode').html(linkThree);
+			$('#exampleThreeLink').attr('href', linkThree);
+
+
+		});
+
 	});
 
 })(jQuery);
