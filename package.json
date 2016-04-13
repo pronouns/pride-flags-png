@@ -1,0 +1,22 @@
+{
+  "name": "pride-flags-png",
+  "version": "0.0.0",
+  "description": "Pride flags in PNG!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pronouns/pride-flags-png.git"
+  },
+  "devDependencies": {
+    "async": "^2.0.0-rc.3",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pronouns/pride-flags-png/issues"
+  },
+  "homepage": "https://github.com/pronouns/pride-flags-png#readme"
+}
